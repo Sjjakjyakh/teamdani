@@ -3,6 +3,9 @@
 import random
 import socket
 import threading
+import sys
+import os
+from os import system, name
 
 os.system("clear")
 print(" =========================================================================")
